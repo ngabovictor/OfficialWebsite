@@ -1,6 +1,5 @@
 appdirs==1.4.0
 beautifulsoup4==4.4.1
-Brlapi==0.6.4
 CDApplet==1.0
 CDBashApplet==1.0
 chardet==2.3.0
