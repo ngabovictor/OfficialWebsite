@@ -1,0 +1,40 @@
+{% extends "base2.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+
+    
+            <div class="col-md-9 container" id="message_list" >
+                    
+                        <div class="main_title">
+                        <h4>READ MESSAGES</h4>
+                        </div>
+                    
+
+                    <table class="table table-hover" id="message_listing_table">
+                        
+                        {% for message in inbox %}
+
+                        <tbody>
+                            <tr>
+                                
+                                <td><a href="0{{ message.id }}">{{message.name}}</a></td>
+                                
+                                <td>{{message.email}}</td>
+                                <td>{{message.date}}</td>
+                            </tr>
+                        </tbody>
+                        {% endfor %}
+
+                    </table>
+            </div>
+    
+       
+
+
+        
+
+{% endblock %}

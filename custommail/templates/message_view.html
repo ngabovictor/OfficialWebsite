@@ -1,0 +1,30 @@
+{% extends "base2.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+	
+
+	        
+					
+					<div class="col-md-9 container" id="message" >
+						<h4><a href="messages">Back to mailbox</a></h4>
+
+						<h3 id="specific_message">{{ sender.name }}</h3>
+						<h5>{{ sender.email}}</h5>
+						<div id="client_message">
+							<p>{{ sender.message }}</p>
+						</div>
+
+						
+					</div>
+					
+	
+       
+
+
+        
+
+{% endblock %}
