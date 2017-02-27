@@ -122,6 +122,6 @@ function progress(percent, $element) {
         if (++i<=max) myLoop(i,max);     
         }, 10)
     })(0,percent);  
-}   
+}  
 
 
