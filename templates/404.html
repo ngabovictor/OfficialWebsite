@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block title %}
+        <title>Error 404| Core Labs+</title>
+{% endblock %}
+
+{% block content %}
+{% load staticfiles %}
+
+
+          <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+
+                    <!-- logo -->
+                    <h1 class="navbar-brand">
+                        <a href="index">
+                            <img id="logo_main" src="img/logo_main_blackBG.png" alt="Kasper Logo">
+                        </a>
+                    </h1>
+                    <!-- /logo -->
+
+                    </div>
+
+                    <!-- main nav -->
+                    <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
+                        <ul id="nav" class="nav navbar-nav">
+                            <li><a href="index">Home</a></li>
+                            <li><a href="index#service">Service</a></li>
+                            <li><a href="index#portfolio">portfolio</a></li>
+                            <li><a href="index#about">About</a></li>
+                            <li><a href="index#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- /main nav -->
+                </div>
+
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+
+        <!-- Error Content -->
+        <div class="error_content">
+             <h2 class="text-center" id="ooops">Ooops! <span id="msg_404">Error 404</span></h2>
+             <br>
+            <h4 class="text-center" id="not_available">The page you requested is not available on this server.</h4>
+        </div>
+
+        <!-- End of Error content -->
+
+
+      
+
+        <!--
+        #footer
+        ========================== -->
+        <footer id="footer_content" class="text-center">
+            <div class="container" id="foot_content_404_500">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        
+                        <div class="text-center footer-social wow fadeInUp" id="footer-social">
+                            <h3>OUR PASSION, OUR POTENTIAL</h3>
+                            <ul class=" list-inline wow fadeInDown">
+                                <li><a href="http://goo.gl/RqhEjP"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                <li><a href="http://goo.gl/hUfpSB"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                <li><a href="http://goo.gl/r4xzR4"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                                <li><a href="http://goo.gl/k9zAy5"><i class="fa fa-instagram fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="copyright">
+                           
+                            <p>&copy Copyright <a href="index">Core Labs+ 2016.</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--
+        End #footer
+        ========================== -->
+
+
+
+
+
+
+{% endblock %}

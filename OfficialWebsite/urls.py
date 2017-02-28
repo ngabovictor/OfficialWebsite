@@ -15,13 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from django.conf.urls import include
+from django.conf.urls import include, handler404, handler500
 from django.conf import settings
 from django.conf.urls.static import static
+from . import views
+
+handler500 = views.handler_500
+handler404 = views.handler_404
 
 urlpatterns = [
     url(r'^private/', admin.site.urls),
     url(r'^', include('mainpage.urls')),
+    url(r'^index', include('mainpage.urls')),
     url(r'^mailbox/', include('custommail.urls')),
 
 ]

@@ -1,0 +1,65 @@
+
+/* =================================== */
+/*	Basic Style 
+/* =================================== */
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    color: #a8a8a8;
+}
+
+
+.btn-blue {
+  background-color: #d42139;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 35px;
+  border-radius: 0px;
+}
+
+
+.contact-form .input-field {
+  margin-bottom: 30px;
+}
+
+.contact-form .form-control {
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  border-radius: 0;
+  height: 58px;
+  box-shadow: none;
+}
+
+
+.contact-form .form-control::-moz-placeholder {
+  color: #1f2021;
+}
+
+.contact-form #msg-submit {
+  font-size: 13px;
+  padding: 17px 50px;
+}
+
+
+/*Login forms*/
+
+#login_forms
+{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#login_header
+{
+  width: 50%;
+  color: #d75b5b;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#invalid_pop
+{
+  color: #d75b5b;
+}

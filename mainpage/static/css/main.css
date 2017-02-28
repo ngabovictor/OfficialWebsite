@@ -988,3 +988,41 @@ figcaption.mask span {
 {
   list-style-type: none;
 }
+
+/*404 and 500 Styles*/
+
+#footer_404_500
+{
+  height: 100%;
+  background-color: #121116;
+}
+#footer_content
+{
+  position: ;
+  bottom: 0px;
+  margin-top: 10%;
+
+
+
+}
+#foot_content_404_500
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer-social
+{
+  margin-bottom: 5%;
+}
+.error_content
+{
+  margin-top: 200px;
+}
+#ooops
+{
+  color: #d42139;
+}
+#msg_404
+{
+  color: #d75b5b;
+}
