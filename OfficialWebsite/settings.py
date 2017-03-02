@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '8niv%q%5cm6qho=(rikq4gals-f)r7sfh+8-xd2$edu%b*a19('
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainpage',
     'custommail',
-    
+
 ]
 
 MIDDLEWARE = [
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'OfficialWebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['/home/nvic/OfficialWebsite/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_ROOT= os.path.join(BASE_DIR, 'static')
+STATIC_ROOT= [os.path.join(BASE_DIR, 'static')]
 STATIC_URL = '/static/'
 MEDIA_ROOT= os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = '/uploads/'
